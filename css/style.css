@@ -1,0 +1,124 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.title-site {
+  text-align: center;
+  line-height: 50px;
+}
+
+.title-site svg {
+  margin-top: 10px;
+}
+
+.form-oh-my-food {
+  text-align: center;
+  height: 280px;
+  background-color: rgba(233, 233, 233, 0.522);
+}
+
+.form-oh-my-food .form-txt {
+  width: 100%;
+  padding: 30px 45px;
+}
+
+.form-oh-my-food .btn-form {
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  padding: 0.8em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 7px 15px -3px rgba(74, 74, 74, 0.9);
+          box-shadow: 1px 7px 15px -3px rgba(74, 74, 74, 0.9);
+}
+
+.form-oh-my-food .search-ville {
+  height: 40px;
+  border-top: 2px solid rgba(128, 128, 128, 0.33);
+  background-color: #e9e9e9;
+}
+
+.form-oh-my-food .search-ville input {
+  height: 100%;
+  border: none;
+  background-color: #e9e9e9;
+  padding-left: 15px;
+}
+
+.form-oh-my-food .search-ville input:focus {
+  outline: none;
+}
+
+.restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e9e9e9;
+  gap: 15px;
+}
+
+.restaurant .title-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 80px;
+  padding: 0 0 8px 20px;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-title {
+  margin: -3px;
+  padding: 15px 15px 5px 15px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.card-title h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+}
+
+.card-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  width: 100%;
+  height: 170px;
+}
+
+.card-img-xl img {
+  -o-object-position: 0 -155px;
+     object-position: 0 -155px;
+}
+/*# sourceMappingURL=style.css.map */

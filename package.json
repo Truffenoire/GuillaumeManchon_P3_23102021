@@ -1,0 +1,19 @@
+{
+  "name": "guillaumemanchon_p3_23102021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Truffenoire/GuillaumeManchon_P3_23102021.git"
+  },
+  "author": "Gui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Truffenoire/GuillaumeManchon_P3_23102021/issues"
+  },
+  "homepage": "https://github.com/Truffenoire/GuillaumeManchon_P3_23102021#readme"
+}
