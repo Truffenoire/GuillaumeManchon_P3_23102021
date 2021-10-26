@@ -1,10 +1,9 @@
 {
   "name": "guillaumemanchon_p3_23102021",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx gulp watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,14 @@
   "bugs": {
     "url": "https://github.com/Truffenoire/GuillaumeManchon_P3_23102021/issues"
   },
-  "homepage": "https://github.com/Truffenoire/GuillaumeManchon_P3_23102021#readme"
+  "homepage": "https://github.com/Truffenoire/GuillaumeManchon_P3_23102021#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.27.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.3"
+  }
 }
