@@ -1,0 +1,20 @@
+.card-menu{ 
+
+    p, h6, span{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+}
+.name-restaurant{
+  h3{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      background-color: #99E2D0;
+      width: 45px;
+      height: 3px;
+      bottom: -5px;
+    }
+  } 
+}

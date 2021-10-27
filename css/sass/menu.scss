@@ -16,7 +16,6 @@
     width: 100%;
 }
 .name-restaurant{
-    // width: 375px;
     height: 1150px;
     background-color: rgb(233, 233, 233);
     padding-top: 30px;
@@ -32,6 +31,9 @@
         padding-top: 20px;
     }
 }
+.height-note{
+    height: 1200px;
+}
 .title-menu{
     display: flex;
     font-size: 25px;
@@ -41,24 +43,63 @@
 }
 .card-menu{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    // justify-content: space-between;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.823);
     border-radius: 10px;
     height: 60px;
-    padding: 10px 0 5px 15px;
     margin: 20px auto;
     box-shadow: 0px 0px 10px 8px #CDCDCD;
+    overflow: hidden;
+    &:hover .coche{
+            animation: 0.5s test both;
+        }
+    &:hover .icon-coche{
+        animation: 0.5s rota;
+    }
+    .coche{
+        margin-right: -60px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #99E2D0;
+        height: 100%;
+        width: 60px;
+        color: #fff;
+        justify-content: center;
+        align-self: center;
+        .icon-coche{
+            font-size: 20px;
+            height: 60px;
+            display: flex;
+            width: 60px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .card-txt{
+        display: flex;
+        justify-content: space-around;
+        white-space: nowrap;
+        flex-direction: column;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-left: 10px;
+    }
     h6{
         font-size: 16px;
     }
     p{
         font-size: 15px;
+        text-overflow: ellipsis;
     }
     span{
-        align-self: flex-end;
-        padding-right: 10px
+        display: flex;
+        height: 60px;
+        width: 60px;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        flex-grow: 1;
+        margin-right: 10px;
     }
 }
 .btn-menu{
@@ -86,5 +127,21 @@
     to{
         opacity: 1;
         translate: translateY(0px);
+    }
+}
+@keyframes test{
+    0%{
+        margin-right: -60px;
+    }
+    100%{
+        margin-right: 0px;
+    }
+}
+@keyframes rota{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
