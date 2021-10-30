@@ -22,11 +22,11 @@
         text-shadow: 3px 3px 3px black;
     }
 }
-@media all and (max-width: 768px){
 html{
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     background-color: #fff;
+    // color: red;
 }
 // Logo Site----------------------------------------------
 .title-site{
@@ -177,7 +177,7 @@ html{
           opacity: 1;
           background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
           background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-          -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color:transparent;
           font-weight: bold;
         }
@@ -229,5 +229,4 @@ footer{
             padding-right: 15px;
         }
     }
-}
 }

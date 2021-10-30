@@ -1,0 +1,48 @@
+@media all and (min-width: 769px){
+    section.name-restaurant{
+        height: 800px;
+    }
+    .menu-restaurant{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        .entrer{
+            grid-column-start: 1;
+        }
+        .plats{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        .desserts{
+            grid-column-start: 3;
+            grid-row-start: 1;
+        }
+        .entrer-un{
+            grid-column-start: 1;
+        }
+        .plats-un{
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
+        .plats-deux{
+            grid-row-start: 3;
+            grid-column-start: 2;
+        }
+        .plats-trois{
+            grid-row-start: 4;
+            grid-column-start: 2;
+        }
+        .dessert-un{
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+        .dessert-deux{
+            grid-row-start: 3;
+            grid-column-start: 3;
+        }
+        .dessert-trois{
+            grid-row-start: 4;
+            grid-column-start: 3;
+        }
+    }
+}

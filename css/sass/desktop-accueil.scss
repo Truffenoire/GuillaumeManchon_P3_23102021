@@ -1,0 +1,40 @@
+@media all and (min-width: 769px){
+    .fonction{
+        h2{
+            margin-left: 8%;
+        }
+    }
+    .menu{
+        display: flex;
+        .menu-flex{
+            white-space: nowrap;
+        }
+    }
+    .restaurant{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .title-restaurant{
+            grid-column: span 2;
+        }
+        .card img{
+            object-position: 50%;
+        }
+    }
+    footer{
+        svg{
+            height: 50px;
+            margin-left: 8%;
+        }
+    }
+    .nav-footer{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                font-size: 18px;
+            }
+        }
+    }
+}
