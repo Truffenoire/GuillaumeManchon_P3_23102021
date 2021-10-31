@@ -40,6 +40,23 @@
     font-family: 'Shrikhand', sans-serif;
     justify-content: space-between;
     padding: 0 20px;
+    .fill{
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        margin-right: 15px;
+        line-height: 30px;
+        &:hover{
+          display: inline-block;
+          opacity: 1;
+          background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+          background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color:transparent;
+          font-weight: bold;
+          animation: 0.3s fill cubic-bezier(0,1.04,.13,-0.94);
+        }
+    }
 }
 .card-menu{
     display: flex;
@@ -143,5 +160,33 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes fill{
+    0%{
+        opacity: 0.1;
+        font-weight: 400;
+        background-position: -20px;
+        background-color: linear-gradient(to left, white, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    }
+    20%{
+        opacity: 0.3;
+        background-position: -10px;
+        background-color: linear-gradient(to left,  #9356dc,white, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    }
+    50%{
+        opacity: 0.4;
+        background-position: 0px;
+        background-color: linear-gradient(to left,  #9356dc, #b35cdc,white, #cf64dc, #e86edb, #ff79da);
+    }
+    80%{
+        opacity: 0.6;
+        background-position: 10px;
+        background-color: linear-gradient(to left,  #9356dc, #b35cdc, #cf64dc, #e86edb,white, #ff79da);
+    }
+    100%{
+        opacity: 1;
+        background-position: 20px;
+        background-color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da, white);
     }
 }

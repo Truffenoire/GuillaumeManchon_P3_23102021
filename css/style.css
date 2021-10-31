@@ -171,12 +171,12 @@ html {
   line-height: 30px;
 }
 .card-title .fill:hover {
-  animation: fill 0.3s ease-in-out;
+  animation: 0.3s fill cubic-bezier(1, -0.19, 0.6, 1.07);
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -333,6 +333,66 @@ footer svg {
     grid-column-start: 3;
   }
 }
+.fond-load {
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: zou 3s linear both;
+}
+.fond-load .loader {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+.fond-load .loader-quart {
+  border-radius: 200px;
+  border-top: 10px solid #FF79DA;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #9356DC;
+  animation: 3s spin linear both;
+}
+.fond-load .loader-quart::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border: 10px solid transparent;
+  border-left-color: #99E2D0;
+  animation: 1.5s spin linear both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1000;
+  }
+}
+@keyframes zou {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1000;
+  }
+}
 .title-site {
   position: relative;
 }
@@ -379,6 +439,23 @@ footer svg {
   font-family: "Shrikhand", sans-serif;
   justify-content: space-between;
   padding: 0 20px;
+}
+.title-menu .fill {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  margin-right: 15px;
+  line-height: 30px;
+}
+.title-menu .fill:hover {
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: 0.3s fill cubic-bezier(0, 1.04, 0.13, -0.94);
 }
 
 .card-menu {
@@ -503,5 +580,33 @@ footer svg {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0.1;
+    font-weight: 400;
+    background-position: -20px;
+    background-color: linear-gradient(to left, white, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  }
+  20% {
+    opacity: 0.3;
+    background-position: -10px;
+    background-color: linear-gradient(to left, #9356dc, white, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  }
+  50% {
+    opacity: 0.4;
+    background-position: 0px;
+    background-color: linear-gradient(to left, #9356dc, #b35cdc, white, #cf64dc, #e86edb, #ff79da);
+  }
+  80% {
+    opacity: 0.6;
+    background-position: 10px;
+    background-color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, white, #ff79da);
+  }
+  100% {
+    opacity: 1;
+    background-position: 20px;
+    background-color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da, white);
   }
 }
