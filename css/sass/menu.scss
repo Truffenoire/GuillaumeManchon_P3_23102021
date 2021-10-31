@@ -96,23 +96,26 @@
     .card-txt{
         display: flex;
         justify-content: space-around;
-        white-space: nowrap;
         flex-direction: column;
-        text-overflow: ellipsis;
         overflow: hidden;
         margin-left: 10px;
     }
     h6{
         font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p{
         font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
     }
     span{
         display: flex;
         height: 60px;
-        width: 60px;
+        width: 40px;
         flex-direction: row-reverse;
         align-items: flex-end;
         flex-grow: 1;

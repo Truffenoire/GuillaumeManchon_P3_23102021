@@ -168,10 +168,10 @@ html {
   color: black;
   cursor: pointer;
   margin-right: 15px;
-  line-height: 30px;
+  line-height: 38px;
 }
 .card-title .fill:hover {
-  animation: 0.3s fill cubic-bezier(1, -0.19, 0.6, 1.07);
+  animation: 0.3s fill cubic-bezier(0, 1.04, 0.13, -0.94);
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -244,6 +244,24 @@ footer svg {
   width: 45px;
   height: 3px;
   bottom: -5px;
+}
+
+.after-new {
+  position: relative;
+}
+.after-new::after {
+  content: "Nouveau";
+  font-size: 15px;
+  color: #2d806b;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  top: 5%;
+  right: 5%;
+  background-color: #99E2D0;
 }
 
 @media all and (min-width: 769px) {
@@ -496,23 +514,26 @@ footer svg {
 .card-menu .card-txt {
   display: flex;
   justify-content: space-around;
-  white-space: nowrap;
   flex-direction: column;
-  text-overflow: ellipsis;
   overflow: hidden;
   margin-left: 10px;
 }
 .card-menu h6 {
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card-menu p {
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .card-menu span {
   display: flex;
   height: 60px;
-  width: 60px;
+  width: 40px;
   flex-direction: row-reverse;
   align-items: flex-end;
   flex-grow: 1;

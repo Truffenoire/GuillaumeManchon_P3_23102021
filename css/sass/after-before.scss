@@ -1,5 +1,4 @@
 .card-menu{ 
-
     p, h6, span{
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -17,4 +16,21 @@
       bottom: -5px;
     }
   } 
+}
+.after-new{
+  position: relative;
+  &::after{
+    content: "Nouveau";
+    font-size: 15px;
+    color: #2d806b;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 5%;
+    right: 5%;
+    background-color: #99E2D0;
+  }
 }
