@@ -139,6 +139,7 @@ html {
 }
 
 .card {
+  position: relative;
   border-radius: 20px;
   box-shadow: 1px 7px 15px -3px rgba(74, 74, 74, 0.6);
   overflow: hidden;
@@ -153,9 +154,7 @@ html {
   text-decoration: none;
   color: black;
 }
-
 .card-title {
-  position: relative;
   display: flex;
   justify-content: space-between;
   margin: -3px;
@@ -163,14 +162,19 @@ html {
   height: 80px;
   background-color: #fff;
 }
-.card-title .fill {
+.card .heart {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+}
+.card .heart .fill {
   font-size: 25px;
   color: black;
   cursor: pointer;
   margin-right: 15px;
   line-height: 38px;
 }
-.card-title .fill:hover {
+.card .heart .fill:hover {
   animation: 0.3s fill cubic-bezier(0, 1.04, 0.13, -0.94);
   display: inline-block;
   opacity: 1;

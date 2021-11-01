@@ -143,6 +143,7 @@ html{
     }
 }
 .card{
+    position: relative;
     border-radius: 20px;
     box-shadow: 1px 7px 15px -3px rgba(74,74,74,0.6);
     overflow: hidden;
@@ -157,8 +158,20 @@ html{
         color: black;
     }
 }
-.card-title{
-    position: relative;
+.card-title {
+    display: flex;
+    justify-content: space-between;
+     margin: -3px;
+    padding: 15px 15px 5px 15px;
+    height: 80px;
+    background-color: #fff;
+}
+.card{    
+    
+    .heart {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
     display: flex;
     justify-content: space-between;
     margin: -3px;
@@ -187,7 +200,7 @@ html{
         margin: 0 0 5px 0;
         font-size: 1.1em;
     }
-
+}
 .card-img img{
     object-fit: cover;
     object-position: bottom;
