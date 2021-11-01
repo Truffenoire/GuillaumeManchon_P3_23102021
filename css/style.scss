@@ -26,7 +26,6 @@ html{
     font-family: 'roboto', sans-serif;
     font-size: 16px;
     background-color: #fff;
-    // color: red;
 }
 // Logo Site----------------------------------------------
 .title-site{
@@ -65,6 +64,7 @@ html{
                 outline: none;
             }
             &::placeholder{
+                color: black;
                 font-size: 14px;
                 opacity: 0.8;
                 font-weight: 600;
@@ -166,18 +166,12 @@ html{
     height: 80px;
     background-color: #fff;
 }
-.card{    
-    
+.card{
     .heart {
     position: absolute;
     right: 5%;
     bottom: 8%;
     display: flex;
-    justify-content: space-between;
-    margin: -3px;
-    padding: 15px 15px 5px 15px;
-    height: 80px;
-    background-color: #fff;
     .fill{
         font-size: 25px;
         color: black;

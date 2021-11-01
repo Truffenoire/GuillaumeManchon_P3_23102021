@@ -6,6 +6,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            h3{
+              position: relative;
+              &::before{
+                position: absolute;
+                content: "";
+                background-color: #99E2D0;
+                width: 45px;
+                height: 3px;
+                bottom: 50px;
+              }
+            } 
         .entrer{
             grid-column-start: 1;
         }
