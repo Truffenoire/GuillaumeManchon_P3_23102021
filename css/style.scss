@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+// VARIABLE------------------------------------------------
+$color1: #9356DC;
+$color2: #FF79DA;
+$color3: #99E2D0;
 // MIXIN---------------------------------------------------
 @mixin btn-oh-my-food{
     border-radius: 20px;
@@ -99,8 +103,11 @@ html{
         list-style: none;
         display: flex;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             background: #9256dc2e;
+        }
+        &:hover .icon-fonction{
+            color: $color1;
         }
         .translate-number{
             position: absolute;
@@ -111,7 +118,7 @@ html{
             height: 20px;
             color: #fff;
             font-weight: lighter;
-            background-color:  #9356dc;
+            background-color:  $color1;
             span{
                 font-size: 12px;
                 position: absolute;
@@ -121,9 +128,6 @@ html{
         }
         .icon-fonction{
             margin: 0 20px;
-            .fa-store{
-                color: #9356dc;
-            }
         }
     }
 }
@@ -226,7 +230,7 @@ footer{
         color: #fff;
         padding-left: 30px;
         &:hover{
-            color: #99E2D0;
+            color: $color3;
         }
         .foot-svg{
             padding-right: 10px;

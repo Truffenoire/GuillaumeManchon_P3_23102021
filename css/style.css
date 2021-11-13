@@ -100,6 +100,9 @@ html {
 .menu .menu-flex:hover {
   background: #9256dc2e;
 }
+.menu .menu-flex:hover .icon-fonction {
+  color: #9356DC;
+}
 .menu .menu-flex .translate-number {
   position: absolute;
   top: 22.5px;
@@ -109,7 +112,7 @@ html {
   height: 20px;
   color: #fff;
   font-weight: lighter;
-  background-color: #9356dc;
+  background-color: #9356DC;
 }
 .menu .menu-flex .translate-number span {
   font-size: 12px;
@@ -119,9 +122,6 @@ html {
 }
 .menu .menu-flex .icon-fonction {
   margin: 0 20px;
-}
-.menu .menu-flex .icon-fonction .fa-store {
-  color: #9356dc;
 }
 
 .restaurant {

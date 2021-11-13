@@ -18,9 +18,9 @@
     }
     .loader-quart{
         border-radius: 200px;
-        border-top: 10px solid #FF79DA;
+        border-top: 10px solid $color2;
         border-left: 10px solid transparent;
-        border-bottom: 10px solid #9356DC;
+        border-bottom: 10px solid $color1;
         animation: 3s spin linear both;
         &::after{
             content: '';
@@ -30,7 +30,7 @@
             position: absolute;
             top: -10px; left: -10px;
             border: 10px solid transparent;
-            border-left-color: #99E2D0;
+            border-left-color: $color3;
             animation: 1.5s spin linear both;
         }
     }

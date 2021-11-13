@@ -10,7 +10,7 @@
     &::before{
       position: absolute;
       content: "";
-      background-color: #99E2D0;
+      background-color: $color3;
       width: 45px;
       height: 3px;
       bottom: -5px;
@@ -31,6 +31,6 @@
     height: 30px;
     top: 5%;
     right: 5%;
-    background-color: #99E2D0;
+    background-color: $color3;
   }
 }
